@@ -44,7 +44,7 @@ fixed4 frag(v2f IN) : SV_Target
     fixed4 c = SampleSpriteTexture (IN.texcoord) * IN.color;
     fixed3 noi = tex2D(_NoiseTex, IN.texcoord * _NoiseTile).rgb;
     fixed mask = tex2D(_MaskTex, IN.texcoord).r;
-    //mask = 0;
+    mask = max(0.4, mask);    
     c.rgb *= lerp(noi, fixed3(1,1,1), mask);
     c.rgb *= c.a;
     return c;
