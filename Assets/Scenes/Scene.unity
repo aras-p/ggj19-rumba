@@ -1047,7 +1047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  rotateSpeed: 20
+  rotateSpeed: 30
   arrowInactiveColor: {r: 1, g: 1, b: 1, a: 0.25}
   arrowActiveColor: {r: 1, g: 0.5, b: 0.5, a: 1}
 --- !u!58 &1990957554
@@ -1099,6 +1099,7 @@ GameObject:
   - component: {fileID: 2054106403}
   - component: {fileID: 2054106402}
   - component: {fileID: 2054106405}
+  - component: {fileID: 2054106406}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1207,6 +1208,30 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Cinemachine.CinemachineBrain+VcamActivatedEvent, Cinemachine, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &2054106406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054106401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472931b1d43ad42e7a5983528551650b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  digitSize: 0.05
+  digits:
+  - {fileID: 2800000, guid: 5b1a3b70f27cc402ba5c8dce531216a7, type: 3}
+  - {fileID: 2800000, guid: c9eef20376b244340bd5ad651390d759, type: 3}
+  - {fileID: 2800000, guid: 2b383b7856cc649e680035f532b89bb0, type: 3}
+  - {fileID: 2800000, guid: f3b9a67a2faf04a809cfe6abfd1a3324, type: 3}
+  - {fileID: 2800000, guid: 754a286b233ac4145a39df017d3a55cb, type: 3}
+  - {fileID: 2800000, guid: f4adb4300d67c45e79c4adafb3daf77d, type: 3}
+  - {fileID: 2800000, guid: f923e6388a0b442e8acb8ff21c41b225, type: 3}
+  - {fileID: 2800000, guid: 2508000eb54704bc6b920c0253a8f6c9, type: 3}
+  - {fileID: 2800000, guid: a3175b608097b42be9ec686088bee4f3, type: 3}
+  - {fileID: 2800000, guid: 71106c3cbd6ae4bc790360ccf2642073, type: 3}
 --- !u!1001 &2084015956
 PrefabInstance:
   m_ObjectHideFlags: 0

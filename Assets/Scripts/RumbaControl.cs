@@ -48,7 +48,7 @@ public class RumbaControl : MonoBehaviour
         if (pickup != null)
         {
             Destroy(c.gameObject);
-            //@TODO: score
+            Game.instance.score += pickup.score;
             return;
         }
         
