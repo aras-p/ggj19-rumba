@@ -44,6 +44,14 @@ public class RumbaControl : MonoBehaviour
 
     void OnCollisionStay2D(Collision2D c)
     {
+        var pickup = c.gameObject.GetComponent<Pickupable>();
+        if (pickup != null)
+        {
+            Destroy(c.gameObject);
+            //@TODO: score
+            return;
+        }
+        
         var dir = tr.localEulerAngles.z;
         var newDir = dir + Random.Range(-5,5) + directionChoice * 90;
         rb.MoveRotation(newDir);
