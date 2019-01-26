@@ -5,10 +5,13 @@ public class HumanControl : MonoBehaviour
     public float moveSpeed = 1.0f;
     public float intervalMin = 0.3f;
     public float intervalMax = 2.0f;
+    public GameObject[] droppings;
+    public float dropInterval = 7.0f;
     Transform tr;
     Rigidbody2D rb;
     SpriteSwapper swapper;
     float timeToDecision;
+    float timeToDrop;
 
     enum State
     {
@@ -24,6 +27,7 @@ public class HumanControl : MonoBehaviour
         swapper = GetComponentInChildren<SpriteSwapper>();
         tr = transform;
         rb = GetComponent<Rigidbody2D>();
+        timeToDrop = Random.Range(dropInterval * 0.5f, dropInterval * 1.5f);
         NextDecision();
     }
     
@@ -40,9 +44,16 @@ public class HumanControl : MonoBehaviour
             var fwd = tr.up * moveSpeed;
             rb.velocity = fwd;
             swapper.enabled = true;
+            if (timeToDrop <= 0 && droppings.Length > 0)
+            {
+                var dropIndex = Random.Range(0, droppings.Length);
+                //var go =
+                timeToDrop = Random.Range(dropInterval * 0.5f, dropInterval * 1.5f);
+            }
             break;
         }
 
+        timeToDrop -= dt;
         timeToDecision -= dt;
         if (timeToDecision <= 0)
             NextDecision();

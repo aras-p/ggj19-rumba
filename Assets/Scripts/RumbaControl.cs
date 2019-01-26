@@ -25,18 +25,12 @@ public class RumbaControl : MonoBehaviour
     
     void Update()
     {
+        if (Game.instance.state != Game.State.Game)
+            return;
         var fwd = tr.up * moveSpeed;
         rb.velocity = fwd;
 
         var hor = Input.GetAxis("Horizontal");
-        /*
-        if (hor < 0)
-            directionChoice = 1;
-        else if (hor > 0)
-            directionChoice = -1;
-        if (Math.Abs(directionChoice) < 0.05f)
-            directionChoice = 0;
-            */
         directionChoice = -hor;
 
         rb.angularVelocity = directionChoice * rotateSpeed;
@@ -48,6 +42,9 @@ public class RumbaControl : MonoBehaviour
 
     void OnCollisionStay2D(Collision2D c)
     {
+        if (Game.instance.state != Game.State.Game)
+            return;
+
         var pickup = c.gameObject.GetComponent<Pickupable>();
         if (pickup != null)
         {

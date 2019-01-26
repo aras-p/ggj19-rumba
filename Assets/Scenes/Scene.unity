@@ -161,6 +161,8 @@ MonoBehaviour:
   moveSpeed: 1
   intervalMin: 0.3
   intervalMax: 2
+  droppings: []
+  dropInterval: 7
 --- !u!50 &100536892
 Rigidbody2D:
   serializedVersion: 4
@@ -406,7 +408,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6786c7e7fe74c49be830f103cea5764a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timePerGame: 60
   score: 0
+  state: 1
   levelSprite: {fileID: 1262069321}
 --- !u!4 &410931532
 Transform:
@@ -2054,6 +2058,12 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 2508000eb54704bc6b920c0253a8f6c9, type: 3}
   - {fileID: 2800000, guid: a3175b608097b42be9ec686088bee4f3, type: 3}
   - {fileID: 2800000, guid: 71106c3cbd6ae4bc790360ccf2642073, type: 3}
+  timeOutline: {fileID: 2800000, guid: 5a33f1b29bc2040aeb453d0f4a1f763b, type: 3}
+  timeFill: {fileID: 2800000, guid: c02e5c71122c742e1b5ee0dfb9b7e088, type: 3}
+  startScreen: {fileID: 2800000, guid: 4d490bbbf847843978a5e51864c2f371, type: 3}
+  endScreen: {fileID: 2800000, guid: 70d4580e7e88945e5b6faf5451413e1d, type: 3}
+  fillRatio: 0.83
+  fillRatio2: 0.86
 --- !u!114 &2054106407
 MonoBehaviour:
   m_ObjectHideFlags: 0
