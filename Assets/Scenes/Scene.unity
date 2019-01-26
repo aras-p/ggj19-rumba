@@ -770,7 +770,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac4d24740b6d44a8bb02f03097fa1514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 2
+  rotateSpeed: 20
+  arrowInactiveColor: {r: 1, g: 1, b: 1, a: 0.25}
+  arrowActiveColor: {r: 1, g: 0.5, b: 0.5, a: 1}
 --- !u!58 &1990957554
 CircleCollider2D:
   m_ObjectHideFlags: 0
