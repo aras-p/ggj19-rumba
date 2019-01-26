@@ -54,9 +54,9 @@ public class RumbaControl : MonoBehaviour
         }
         
         var dir = tr.localEulerAngles.z;
-        var newDir = dir + 180 + Random.Range(-40,40); //Random.Range(-5,5) + directionChoice * 90;
+        var newDir = dir + directionChoice * rotateSpeed * Time.deltaTime * 15.0f;
         rb.MoveRotation(newDir);
-        directionChoice *= 0.5f;
+        //directionChoice *= 0.5f;
         UpdateArrowColors();
     }
 

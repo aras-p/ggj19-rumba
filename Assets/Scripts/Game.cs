@@ -12,18 +12,19 @@ public class Game : MonoBehaviour
 
     public enum State
     {
-        Begin,
         Game,
         End
     }
 
     public float timePerGame = 60.0f;
     public int score = 0;
+    [NonSerialized]
     public State state = State.Game;
 
     public SpriteRenderer levelSprite;
-    
-    internal float timeRatioLeft;
+
+    [NonSerialized]
+    public float timeRatioLeft;
 
     void Update()
     {
@@ -32,6 +33,6 @@ public class Game : MonoBehaviour
             state = State.End;
 
         if (state == State.End && Input.GetKeyDown(KeyCode.Space))
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("SceneBegin");
     }
 }
