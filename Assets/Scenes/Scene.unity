@@ -1183,6 +1183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7aa936ceffbf4a418953f7b582c5561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rtSize: 128
   pointsShader: {fileID: 4800000, guid: d8b1e19027ca6471da12bab3ee6810d4, type: 3}
 --- !u!1 &1329530486
 GameObject:
@@ -1664,8 +1665,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  rotateSpeed: 30
-  arrowInactiveColor: {r: 1, g: 1, b: 1, a: 0.25}
+  rotateSpeed: 65
+  arrowInactiveColor: {r: 1, g: 1, b: 1, a: 0.09411765}
   arrowActiveColor: {r: 1, g: 0.5, b: 0.5, a: 1}
 --- !u!58 &1990957554
 CircleCollider2D:

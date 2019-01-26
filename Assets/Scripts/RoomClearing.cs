@@ -23,6 +23,13 @@ public class RoomClearing : MonoBehaviour
         InitializeRT();
     }
 
+    void OnDestroy()
+    {
+        if (m_CB != null)
+            m_CB.Dispose();
+        m_CB = null;
+    }
+
     void InitializeRT()
     {
         m_RT = new RenderTexture(rtSize, rtSize, 0, GraphicsFormat.R8_UNorm);
