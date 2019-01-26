@@ -40,6 +40,8 @@ public class RumbaControl : MonoBehaviour
         rb.angularVelocity = directionChoice * rotateSpeed;
 
         UpdateArrowColors();
+        
+        RoomClearing.instance.DrawTrace(tr.localPosition);
     }
 
     void OnCollisionStay2D(Collision2D c)

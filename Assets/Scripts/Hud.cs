@@ -16,7 +16,7 @@ public class Hud : MonoBehaviour
             rect.y = digitPix * 0.3f;
             rect.width = digitPix;
             rect.height = digitPix;
-            var idx = (int)(scoreStr[i] - '0');
+            var idx = scoreStr[i] - '0';
             GUI.DrawTexture(rect, digits[idx]);
         }
     }
