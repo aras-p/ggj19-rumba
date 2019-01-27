@@ -323,6 +323,7 @@ MonoBehaviour:
   timePerGame: 60
   score: 0
   levelSprite: {fileID: 1262069321}
+  endSound: {fileID: 8300000, guid: afb0bc9e5394842eea48533865b1a318, type: 3}
 --- !u!4 &410931532
 Transform:
   m_ObjectHideFlags: 0
@@ -1753,6 +1754,16 @@ MonoBehaviour:
   rotateSpeed: 65
   arrowInactiveColor: {r: 1, g: 1, b: 1, a: 0.09411765}
   arrowActiveColor: {r: 1, g: 0.5, b: 0.5, a: 1}
+  pickupSounds:
+  - {fileID: 8300000, guid: 186ce1c82581247e48db715c3415cf99, type: 3}
+  - {fileID: 8300000, guid: a195bfdec89ea4040a2cdb1cd48a0d21, type: 3}
+  - {fileID: 8300000, guid: 88feae58624704a07aac4c4c1862ba04, type: 3}
+  - {fileID: 8300000, guid: f0482fae49816474286d8943ece4921e, type: 3}
+  bumpSounds:
+  - {fileID: 8300000, guid: e1d288ef01274467583a6d67c5bb9bdc, type: 3}
+  - {fileID: 8300000, guid: b65e967a1811f47d8b40bb005a4d05b1, type: 3}
+  - {fileID: 8300000, guid: c586351fc2f704a3ba9f2c0e40e02524, type: 3}
+  - {fileID: 8300000, guid: 656aa14c3c4b84c99a3d766ce4dc871e, type: 3}
 --- !u!58 &1990957554
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2086,7 +2097,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
