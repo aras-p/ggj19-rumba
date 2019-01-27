@@ -47,7 +47,7 @@ public class HumanControl : MonoBehaviour
             if (timeToDrop <= 0 && droppings.Length > 0)
             {
                 var dropIndex = Random.Range(0, droppings.Length);
-                //var go =
+                Instantiate(droppings[dropIndex], tr.position + tr.up * 2.0f, tr.rotation);
                 timeToDrop = Random.Range(dropInterval * 0.5f, dropInterval * 1.5f);
             }
             break;
