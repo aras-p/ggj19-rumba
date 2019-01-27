@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 3025616613558231813, guid: 6b9deedb6a0a04c6295739877c094c7a,
         type: 3}
       propertyPath: m_Name
-      value: drop var 2
+      value: drop var kak
       objectReference: {fileID: 0}
     - target: {fileID: 3025616613558231810, guid: 6b9deedb6a0a04c6295739877c094c7a,
         type: 3}
@@ -71,17 +71,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d522a4474156a435d885768c43d0422d,
+      objectReference: {fileID: 21300000, guid: 18453e107f01b4e63bd38184857d093f,
         type: 3}
     - target: {fileID: 3025616613558231809, guid: 6b9deedb6a0a04c6295739877c094c7a,
         type: 3}
       propertyPath: m_Radius
-      value: 0.1
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 3025616613558231809, guid: 6b9deedb6a0a04c6295739877c094c7a,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.009
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025616613558231809, guid: 6b9deedb6a0a04c6295739877c094c7a,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.003
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025616613558231838, guid: 6b9deedb6a0a04c6295739877c094c7a,
+        type: 3}
+      propertyPath: score
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b9deedb6a0a04c6295739877c094c7a, type: 3}

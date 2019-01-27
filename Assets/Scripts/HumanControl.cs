@@ -7,6 +7,7 @@ public class HumanControl : MonoBehaviour
     public float intervalMax = 2.0f;
     public GameObject[] droppings;
     public float dropInterval = 7.0f;
+    public float dropDistance = 2.0f;
     Transform tr;
     Rigidbody2D rb;
     SpriteSwapper swapper;
@@ -47,7 +48,7 @@ public class HumanControl : MonoBehaviour
             if (timeToDrop <= 0 && droppings.Length > 0)
             {
                 var dropIndex = Random.Range(0, droppings.Length);
-                Instantiate(droppings[dropIndex], tr.position + tr.up * 2.0f, tr.rotation);
+                Instantiate(droppings[dropIndex], tr.position + tr.up * dropDistance, tr.rotation);
                 timeToDrop = Random.Range(dropInterval * 0.5f, dropInterval * 1.5f);
             }
             break;

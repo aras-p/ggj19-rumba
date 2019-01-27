@@ -55,6 +55,7 @@ MonoBehaviour:
   - {fileID: 111143426285638414, guid: 3fb3b0db1106041ed9e85dca39e6e4ab, type: 3}
   - {fileID: 111143426285638414, guid: 9727c4585f8c74b838d7a984a1bac097, type: 3}
   dropInterval: 4
+  dropDistance: 1.2
 --- !u!50 &4092717827675287896
 Rigidbody2D:
   serializedVersion: 4
