@@ -7,5 +7,7 @@ public class StartGame : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
             SceneManager.LoadScene("SceneGame");
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
     }
 }

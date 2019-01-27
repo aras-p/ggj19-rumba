@@ -20,4 +20,4 @@ EditorSettings:
   m_ProjectGenerationRootNamespace: 
   m_CollabEditorSettings:
     inProgressEnabled: 1
-  m_EnableTextureStreamingInPlayMode: 1
+  m_EnableTextureStreamingInPlayMode: 0
