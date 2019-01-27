@@ -1759,11 +1759,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a195bfdec89ea4040a2cdb1cd48a0d21, type: 3}
   - {fileID: 8300000, guid: 88feae58624704a07aac4c4c1862ba04, type: 3}
   - {fileID: 8300000, guid: f0482fae49816474286d8943ece4921e, type: 3}
+  - {fileID: 8300000, guid: 6cefd9efe587f4018a5de3124f8d6b61, type: 3}
+  - {fileID: 8300000, guid: eafaf18865b0d4375a0badae97637152, type: 3}
+  - {fileID: 8300000, guid: 5e8bbff956ef74f999cdff4a673b58ab, type: 3}
+  - {fileID: 8300000, guid: 125eaaa2560bf43f49f5f88eaf3806c6, type: 3}
+  - {fileID: 8300000, guid: f7b1a45151e0648cfa2cf413cd53e1c9, type: 3}
   bumpSounds:
   - {fileID: 8300000, guid: e1d288ef01274467583a6d67c5bb9bdc, type: 3}
   - {fileID: 8300000, guid: b65e967a1811f47d8b40bb005a4d05b1, type: 3}
   - {fileID: 8300000, guid: c586351fc2f704a3ba9f2c0e40e02524, type: 3}
   - {fileID: 8300000, guid: 656aa14c3c4b84c99a3d766ce4dc871e, type: 3}
+  - {fileID: 8300000, guid: 57b42f7755af447f79991098c77e202c, type: 3}
+  - {fileID: 8300000, guid: f47a026732c3c441f9dce77b2883721d, type: 3}
+  - {fileID: 8300000, guid: 19d61f8f698214ca8a21cd99681ff63d, type: 3}
+  - {fileID: 8300000, guid: f25db344050264e9f953ed054a8fbd41, type: 3}
 --- !u!58 &1990957554
 CircleCollider2D:
   m_ObjectHideFlags: 0
